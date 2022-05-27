@@ -18,15 +18,15 @@ jobs:
            git config --global user.name ${{ secrets.GitHubName }}
            git config --global user.email ${{ secrets.GitHubMail }}
            git config --global credential.helper store
-           echo "https://Dark-super-me:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
+           echo "https://mradulkumar-glitch:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
            
        
        - name: cloning repo
          continue-on-error: true
          run: |
-           git clone -b main https://Dark-super-me:${{ secrets.GH_TOKEN }}@github.com/Dark-super-me/Dark.git
+           git clone -b main https://mradulkumar-glitch:${{ secrets.GH_TOKEN }}@github.com/mradulkumar-glitch/Encoder.git
        - name: Running PrivateEncoderV2.0 Bot 
-         timeout-minutes: 300
+         timeout-minutes: 1
          continue-on-error: true
          run: |
            cd Dark
