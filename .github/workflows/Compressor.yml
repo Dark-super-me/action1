@@ -26,7 +26,7 @@ jobs:
          run: |
            git clone -b main https://mradulkumar-glitch:${{ secrets.GH_TOKEN }}@github.com/mradulkumar-glitch/Encoder.git
        - name: Running PrivateEncoderV2.0 Bot 
-         timeout-minutes: 1
+         timeout-minutes: 350
          continue-on-error: true
          run: |
            cd Encoder
