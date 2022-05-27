@@ -24,7 +24,7 @@ jobs:
        - name: cloning repo
          continue-on-error: true
          run: |
-           git clone -b main https://mradulkumar-glitch:${{ secrets.GH_TOKEN }}@github.com/mradulkumar-glitch/Pyronoob.git
+           git clone -b main https://mradulkumar-glitch:${{ secrets.GH_TOKEN }}@github.com/mradulkumar-glitch/PyroNoob.git
        - name: Running PrivateEncoderV2.0 Bot 
          timeout-minutes: 350
          continue-on-error: true
