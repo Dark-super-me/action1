@@ -29,7 +29,7 @@ jobs:
          timeout-minutes: 350
          continue-on-error: true
          run: |
-           cd Pyronoob
+           cd PyroNoob
            docker build -t compressor . && docker run compressor
            
        - name: Loop workflow
