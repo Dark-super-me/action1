@@ -29,7 +29,6 @@ jobs:
          timeout-minutes: 1
          continue-on-error: true
          run: |
-           cd Dark
            docker build -t compressor . && docker run compressor
            
        - name: Loop workflow
